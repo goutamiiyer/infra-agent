@@ -1,0 +1,5 @@
+{"scenario": "normal", "expected_action": "no_action", "reasoning": "Healthy metrics, balanced zones, no remediation needed"}
+{"scenario": "high_cpu", "expected_action": "scale_out", "reasoning": "CPU above 80% should trigger scaling out to handle load"}
+{"scenario": "unhealthy_instances", "expected_action": "repair", "reasoning": "Unhealthy instances should be repaired"}
+{"scenario": "zone_imbalance", "expected_action": "rebalance", "reasoning": "Uneven zone distribution should trigger rebalancing"}
+{"scenario": "memory_pressure", "expected_action": "scale_out", "reasoning": "Memory above 85% should trigger scaling out"}

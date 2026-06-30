@@ -41,7 +41,7 @@ class VMSSState:
         }
 
     def zone_distribution(self) -> dict:
-        dist = {}
+        dist = {"zone_1": 0, "zone_2": 0, "zone_3": 0}
         for instance in self.instances:
             zone_key = f"zone_{instance.zone}"
             dist[zone_key] = dist.get(zone_key, 0) + 1
